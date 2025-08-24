@@ -6,7 +6,7 @@ import { brands } from "@/data/brands";
 
 export default function GiftCardBrands() {
   return (
-    <div className="py-12 bg-gray-50">
+    <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
@@ -31,10 +31,11 @@ export default function GiftCardBrands() {
             <div
               key={brand.id}
               className={clsx(
-                "bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden",
+                "bg-white rounded-2xl shadow-xl hover:shadow-2xl shadow-gray-300 overflow-hidden transform transition-transform duration-300 hover:scale-105",
                 brand.isPartial && "opacity-60"
               )}
             >
+
               {/* Logo Section */}
               <div className="bg-gray-100 p-8 flex items-center justify-center h-48">
                 {brand.logo}
